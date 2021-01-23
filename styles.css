@@ -19,6 +19,17 @@ body {
   font-family: Courier New, sans-serif;
 }
 
+p {
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-size: 1.2rem;
+  color: black;
+  background-color: white;
+}
+
 h1 {
   font-size: 1.2rem;
 }
@@ -29,10 +40,8 @@ h1 {
   width: 12rem;
   min-height: 120px;
   background: linear-gradient(
-    135deg,
-    var(--paper-color),
-    85%,
-    var(--gray-light)
+	rgb(200, 200, 200),
+	rgb(200, 200, 200)
   );
   box-shadow: 1px 0 1px var(--gray);
   text-align: center;
@@ -73,10 +82,8 @@ h1 {
   position: relative;
   width: 100%;
   background: linear-gradient(
-    to right,
-    var(--paper-color),
-    80%,
-    var(--gray-light)
+	rgb(100, 100, 100),
+	rgb(200, 200, 200)
   );
   border-top: 1px dashed var(--gray);
   box-shadow: 1px 1px 1px var(--gray);
@@ -128,10 +135,8 @@ h1 {
 .number:nth-child(1),
 .number:nth-child(3) {
   background: linear-gradient(
-    to right,
-    var(--paper-color),
-    60%,
-    var(--gray-light)
+	rgb(100, 100, 100),
+	rgb(200, 200, 200)
   );
 }
 
