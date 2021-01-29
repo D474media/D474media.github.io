@@ -34,6 +34,25 @@ h1 {
   font-size: 1.2rem;
 }
 
+.menu {
+  position: relative;
+  padding: 10px;
+  width: 40%;
+  background: linear-gradient(
+	rgb(200, 200, 200),
+	rgb(200, 200, 200)
+  );
+  box-shadow: 1px 0 1px var(--gray);
+  text-align: center;
+}
+
+.menu-buttons {
+  background: linear-gradient(
+  rgb(100, 100, 100),
+  rgb(200, 200, 200)
+  );
+}
+
 .paper {
   position: relative;
   padding: 10px;
