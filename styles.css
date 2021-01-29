@@ -46,6 +46,29 @@ h1 {
   text-align: center;
 }
 
+/* Tacks */
+.menu::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 40%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+}
+
+.menu::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 40%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+}
+
 .menu-buttons {
   background: linear-gradient(
   rgb(100, 100, 100),
@@ -83,6 +106,28 @@ h1 {
   position: absolute;
   right: 5px;
   top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+}
+
+.paper2::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 90%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray);
+}
+
+.paper2::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 90%;
   width: 10px;
   height: 10px;
   border-radius: 50%;
