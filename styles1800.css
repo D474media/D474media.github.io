@@ -44,6 +44,12 @@ h4 {
   background-color: black;
 }
 
+@media only screen and (max-height: 700px) {
+  .container {
+    width: 75%;
+  }
+}
+
 .menu {
   position: relative;
   padding: 10px;
