@@ -10,12 +10,6 @@
         word.style.transform = 'scale(1)';
       }, 200);
     });
-    word.addEventListener('click', () => {
-      word.style.transform = 'scale(1.1)';
-      setTimeout(() => {
-        word.style.transform = 'scale(1)';
-      }, 200);
-    });
 
   // Easter egg: Double click to add sparkle effect
   message.addEventListener('dblclick', () => {
@@ -26,7 +20,6 @@
   message.addEventListener('touchstart', () => {
     createSparkle(message);
   });
-/*
     word.addEventListener('touchstart', () => {
       word.style.transform = 'scale(1.1)';
       setTimeout(() => {
@@ -34,7 +27,6 @@
       }, 200);
     });
   });
-*/
 
   function createSparkle(element) {
     const sparkle = document.createElement('span');
