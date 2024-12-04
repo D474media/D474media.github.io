@@ -21,9 +21,9 @@ body {
 
 #twitch-embed {
     z-index: 777;
+    width: 100%;
 }
 #twitch-embed iframe {
-    width: 100%;
 }
 .yti iframe{
 }
