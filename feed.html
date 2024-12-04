@@ -63,6 +63,14 @@
   </div>
   </div>
 </div>
+<br></br>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+<br></br>
+    <iframe class="yti" width="700" height="450" src="https://www.youtube-nocookie.com/embed/videoseries?si=IKXS-CbnIB9_JlUU&amp;list=PLHlSTNg7vNsN36ZJlb3lJ99DzN28-6L00" title="D474developments" frameborder="3px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <a href="https://D474designs.github.io"><img class="insignia" src="./assets/DDinsignia.png"></a>
+
 <br /><br />
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eL1sYFqcV-k?si=g_oVXjJQ-8_Qd2_z" title="Skyrim Shadows & FPS Fix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br /><br />
@@ -88,6 +96,30 @@ Entertaining the modern, praising the pushers of boundaries, bringing you the ta
 <p style="align:center;width:40%;">
 Copyright 2024 All Rights Reserved
 </p>
+
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element. -->
+    <script type="text/javascript">
+      var embed = new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "d474th3d357r0y3r",
+        layout: "video",
+        autoplay: true,
+        allowfullscreen: true
+      });
+
+      embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        var player = embed.getPlayer();
+        player.play();
+      });
+      embed.addEventListener(Twitch.Embed.VIDEO_READY, function() {
+          console.log('The video is ready');
+        });
+    </script>
 
 <script src="./assets/script.js"></script>
 </body>
