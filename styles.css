@@ -24,6 +24,7 @@ body {
     width: 100%;
 }
 #twitch-embed iframe {
+  width: 100%;
 }
 .yti iframe{
 }
